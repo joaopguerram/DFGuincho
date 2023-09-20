@@ -1,0 +1,42 @@
+.div-logo {
+  display: flex;
+}
+
+.logo {
+  width: 70%;
+  height: max-content;
+  margin: 15px auto;
+}
+
+.navbar {
+  width: 100%;
+  height: max-content;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px 0 20px;
+  padding: 20px;
+}
+
+.btn-faleConosco {
+  width: 150px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ec7b1f;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+}
