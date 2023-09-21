@@ -1,0 +1,27 @@
+.sectionAbout {
+  margin: -30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionAbout > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionAbout > p {
+  text-align: left;
+  margin: 10px;
+}
+
+.containerTruck {
+  width: max-content;
+  height: max-content;
+}
+
+.imgTruck {
+  width: 350px;
+  height: 230px;
+}

@@ -32,6 +32,7 @@
 .btn-faleConosco {
   width: 150px;
   height: 45px;
+  padding: 10px 0;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -39,4 +40,6 @@
   background-color: black;
   border: 1px solid black;
   border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
 }

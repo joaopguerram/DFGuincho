@@ -14,7 +14,14 @@ const Header = () => {
           <li>Serviços</li>
         </ul>
         <div className="btn-container">
-          <button className="btn-faleConosco">Fale Conosco</button>
+          <a
+            className="btn-faleConosco"
+            href="http://wa.me/+5561999227170"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fale Conosco
+          </a>
         </div>
       </nav>
     </header>
