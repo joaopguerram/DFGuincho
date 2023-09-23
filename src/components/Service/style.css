@@ -7,3 +7,19 @@
   margin-bottom: 50px;
   text-align: center;
 }
+
+@media (min-width: 600px) {
+  .service {
+    display: flex;
+    flex-direction: row;
+    background-color: #d9d9d9;
+    padding: 0 20px 0 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+  }
+
+  .service:hover {
+    background-color: #ec7b1f;
+    color: white;
+  }
+}

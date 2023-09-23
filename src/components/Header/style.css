@@ -3,7 +3,7 @@
 }
 
 .logo {
-  width: 70%;
+  max-width: 280px;
   height: max-content;
   margin: 15px auto;
 }
@@ -42,4 +42,42 @@
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header-site {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .logo {
+    max-width: 280px;
+    margin: 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+  }
+
+  .list > li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ec7b1f;
+  }
+
+  .list > li:hover {
+    border-bottom: 1px solid black;
+  }
 }

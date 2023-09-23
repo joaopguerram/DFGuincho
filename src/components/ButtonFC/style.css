@@ -15,3 +15,10 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: 600px) {
+  .btn-faleConosco:hover {
+    background-color: #ec7b1f;
+    color: black;
+  }
+}

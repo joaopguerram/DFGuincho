@@ -43,3 +43,13 @@ body {
   --font-weigth-500: 500;
   --font-weigth-700: 700;
 }
+
+@media (min-width: 600px) {
+  body {
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px auto;
+  }
+}
