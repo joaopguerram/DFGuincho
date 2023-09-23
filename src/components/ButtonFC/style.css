@@ -1,0 +1,17 @@
+.btn-faleConosco {
+  width: 150px;
+  height: 45px;
+  margin: 10px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ec7b1f;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+}

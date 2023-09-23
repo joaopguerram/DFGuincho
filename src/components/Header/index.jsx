@@ -1,4 +1,5 @@
 import Logo from "../../assets/logo.png";
+import Button from "../ButtonFC";
 import "./style.css";
 
 const Header = () => {
@@ -14,14 +15,7 @@ const Header = () => {
           <li>Serviços</li>
         </ul>
         <div className="btn-container">
-          <a
-            className="btn-faleConosco"
-            href="http://wa.me/+5561999227170"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fale Conosco
-          </a>
+          <Button />
         </div>
       </nav>
     </header>

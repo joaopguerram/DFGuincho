@@ -1,0 +1,14 @@
+.copyrigth {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.copyrigth > p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

@@ -3,7 +3,7 @@ import "./style.css";
 
 const About = () => {
   return (
-    <section className="sectionAbout">
+    <main className="sectionAbout">
       <div className="containerTruck">
         <img
           src={Truck}
@@ -21,7 +21,7 @@ const About = () => {
         socorro, resgate, pane seca e recarga de bateria a qualquer hora, em
         qualquer lugar.
       </p>
-    </section>
+    </main>
   );
 };
 

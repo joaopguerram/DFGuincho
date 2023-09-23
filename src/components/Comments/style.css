@@ -1,7 +1,8 @@
 .containerCard {
   margin: 80px auto;
   max-width: 90vw;
-  height: 100px;
-  display: flex;
-  overflow-x: scroll;
+  height: 130px;
+  display: -webkit-box;
+  overflow-x: auto;
+  overflow-y: hidden;
 }

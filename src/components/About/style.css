@@ -19,6 +19,7 @@
 .containerTruck {
   width: max-content;
   height: max-content;
+  margin-bottom: -30px;
 }
 
 .imgTruck {
