@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+.descriptionService {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
 @media (min-width: 600px) {
   .service {
     display: flex;
@@ -21,5 +27,9 @@
   .service:hover {
     background-color: #ec7b1f;
     color: white;
+  }
+
+  .descriptionService {
+    font-size: 1rem;
   }
 }
