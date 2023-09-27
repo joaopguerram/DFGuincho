@@ -1,18 +1,9 @@
-import { useRef } from "react";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
 import Button from "../ButtonFC";
 import "./style.css";
 
 const Header = () => {
-  const sectionAbout = useRef(null);
-
-  const scrollToSection = () => {
-    window.scrollTo({
-      top: sectionAbout.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <header className="header-site">
       <div className="div-logo">
@@ -21,13 +12,37 @@ const Header = () => {
       <nav className="navbar">
         <ul className="list">
           <li>
-            <button onClick={scrollToSection}>Sobre</button>
+            <Link
+              to="sectionAbout"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Sobre
+            </Link>
           </li>
           <li>
-            <button>Depoimentos</button>
+            <Link
+              to="containerCard"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Depoimentos
+            </Link>
           </li>
           <li>
-            <button>Serviços</button>
+            <Link
+              to="containerServices"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Serviços
+            </Link>
           </li>
         </ul>
         <div className="btn-container">
