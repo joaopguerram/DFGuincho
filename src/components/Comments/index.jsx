@@ -36,7 +36,7 @@ const Comments = () => {
       >
         {comments.map((comment) => {
           return (
-            <SwiperSlide key={comment.id}>
+            <SwiperSlide key={comment.id} className="slide-card">
               <Comment
                 key={comment.id}
                 image={comment.image}
