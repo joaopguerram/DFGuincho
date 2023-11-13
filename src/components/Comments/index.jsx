@@ -1,25 +1,54 @@
 import Comment from "../Comment";
 import "./style.css";
-// import Avaliacao1 from "../../assets/avaliacao-1.png";
-// import Avaliacao2 from "../../assets/avaliacao-2.png";
-// import Avaliacao3 from "../../assets/avaliacao-3.png";
+// import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+// import "./styles.css";
+
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import { comments } from "../../Data/dataComments";
 
 const Comments = () => {
   return (
-    <ul className="containerCard">
-      {comments.map((comment) => {
-        return (
-          <Comment
-            key={comment.id}
-            image={comment.image}
-            name={comment.name}
-            score={comment.score}
-            description={comment.description}
-          />
-        );
-      })}
-    </ul>
+    <>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper containerCard"
+      >
+        {comments.map((comment) => {
+          return (
+            <SwiperSlide key={comment.id}>
+              <Comment
+                key={comment.id}
+                image={comment.image}
+                name={comment.name}
+                score={comment.score}
+                description={comment.description}
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </>
   );
 };
 
